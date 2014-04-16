@@ -85,30 +85,79 @@
 
         <section>
           <h2>What does it DO?</h2>
-          <h3 class="fragment">Thangs.</h3>
-          <ul class="fragment">
-            <li>Enhancements to CSS Aggregation</li>
-            <li>Exclude CSS files from being included</li>
-            <li>Move JavaScript to the footer</li>
-            <li>Backport of Drupal 8 JavaScript handling</li>
-            <li>Exclude JS files from being included</li>
-            <li>Rebuild Theme Registry on Page Reload</li>
-            <li>Display a Viewport Width indicator</li>
-            <li>Display an indicator with classes applied to the HTML. Useful when used in conjunction with Modernizr</li>
-            <li>Export theme settings</li>
-          </ul>
+					<section>
+						<h3>Exclude CSS / JS files from being included</h3>
+						<p>With Magic, you can specify to remove CSS and JavaScript files from your output. With a single line, you can remove all core CSS.</p>
+					</section>
+					<section>
+						<h3>Move all JavaScript to the footer</h3>
+						<p>There is also the option to leave all libraries within the header, which may be needed for some modules.</p>
+						<p>You can also force some JavaScript in the header with the 'force header' option, and several modules (Modernizr) already employ it.</p>
+					</section>
+					<section>
+						<h3>Enhanced JavaScript handling</h3>
+						<p>There is a backport of several D8 features, such as using async and defer for you JavaScript.</p>
+					</section>
+					<section>
+						<h3>Export theme settings</h3>
+						<p>Put all of your theme settings in code, to allow them to be stored wihin your version control.</p>
+					</section>
+					<section>
+						<h3>Rebuild Theme Registry on Page Reload</h3>
+						<p>For development only, allows the theme registry to be rebuilt on every page load. Useful for active theme development.</p>
+					</section>
+					<section>
+						<h3>Display a Viewport Width indicator</h3>
+						<p>Create responsive designs quickly and efficently. Displays your width in pixels or ems.</p>
+					</section>
+					<section>
+						<h3>Display an indicator with classes applied to the HTML</h3>
+						<p>Useful when used in conjunction with Modernizr, allows you to quickly see classes on the html element.</p>
+					</section>
+					<section>
+						<h3>Caching system to ensure performance</h3>
+						<p>All of the CSS and JavaScript excludes are cached within Drupal's caching system, to ensure it does not affect performance at all.</p>
+					</section>
+					<section>
+						<h3>Integration with Livereload</h3>
+						<p>If you have Livereload within your theme, quickly ensure the JavaScript is added to the page during development.</p>
+					</section>
         </section>
 
         <section>
-          <h2>What WILL it do?</h2>
-          <h3 class="fragment">Moar thangs.</h3>
-          <ul class="fragment">
-            <li>Drush integration</li>
-            <li>Liverelaod integration</li>
-            <li>Automatic .tpl filename output</li>
-            <li>Set "every_page" to TRUE in settings</li>
-            <li>More intelligent CSS/JS removal.</li>
-          </ul>
+          <h2>Magic 7.x-2.x</h2>
+					<section>
+						<h3>Rewrite of CSS / JS Removal</h3>
+						<p>fubhy has done some major work to ensure the CSS / JS removal works quickly and efficently. This will eventually allow for better controls over the removal of JavaScript.</p>
+					</section>
+					<section>
+						<h3>Even better JavaScript handling</h3>
+						<p>We are reevaluating new themeing techniques, and ensuring out JavaScript handling works as best as we can.</p>
+						<p>In the most recent dev branch, along with patches to other modules, we have ensured WYWIWYG editors can still work when JavaScript is in the footer.</p>
+					</section>
+					<section>
+						<h3>Drush Integration*</h3>
+						<p>Currently working on allow sub-theme creation through Drush. This will be a port of Omega's system, and be able to be used by any base theme.</p>
+					</section>
+					<section>
+						<h3>Better CSS / JS Removal*</h3>
+						<p>There has been a feature request to allow CSS and JS removal to be customizable by page. We are working to see if this can be possible, and still retain Magic's performance.</p>
+					</section>
+					<section>
+						<h3>Ability to replace JavaScript on site with minified versions</h3>
+						<p>A curent project of mine, to find better ways of minifing the JavaScript on your site.</p>
+					</section>
+					<section>
+						<h3>Drupal 8</h3>
+						<p>Now that Drupal 8 is becoming a reality, we are starting to begin development on a Drupal 8 version.</p>
+					</section>
+					<section>
+						<h3>Other Ideas</h3>
+						<ul>
+							<li>Automatic .tpl filename output</li>
+							<li>Set "every_page" to TRUE in settings</li>
+						</ul>
+					</section>
         </section>
 
         <section>
@@ -119,18 +168,10 @@
         </section>
 
         <section>
-          <h2>What about this Aurora theme?</h2>
-          <p>Aurora as a base theme was rebuilt for version 3 to work directly with Magic. It's purpose is to give you the proper HTML5 templates, a few minor tools to help development, and nothing more.</p>
-          <br>
-          <br>
-          <h4 class="fragment">It is what you need, and nothing more&trade;</h4>
-        </section>
-
-        <section>
           <h2>What about MY theme?</h2>
           <p>Magic is compatible with ANY theme.</p>
           <p>It's purpose is to be reusable, and easily implemented.</p>
-          <p class="fragment">Always test your theme-- but most of all if you are doing work in your theme that you think can be reusable--- submit a ticket. This is how we know what people are using, and how we can make it better.</p>
+          <p class="fragment">Magic came from development of many base themes. We are always looking for what other themers are doing, to see if it can be reusable. If there is something you are looking for, submit a ticket.</p>
         </section>
 
         <section>
